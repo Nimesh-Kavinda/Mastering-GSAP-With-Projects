@@ -71,6 +71,7 @@ nav .offcanvas{
 
 .heading .title {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -78,7 +79,7 @@ nav .offcanvas{
 }
 
 .heading .title img{
-    width: 15%;
+    width: 300px;
     border-radius: 50%;
     border-right: 4px solid #AC0D0D;
     border-left: 3px solid #F48B29;
@@ -98,21 +99,20 @@ nav .offcanvas{
 }
 
 .heading .subtitle p{
-    color: #F48B29;
+    color: #FFF;
     font-weight: 500;
-    font-size: 20px;
-    word-spacing: 3px;
+    font-size: 35px;
+    letter-spacing: 4px;
 
 }
 
-.heading .subtitle p span{
-    color: #FBE6C2;
-    font-weight: 600;
-    font-size: 35px;
-    font-style: italic;
-    letter-spacing: 5px;
-    text-shadow: #AC0D0D;
-    
+
+.heading .subtitle2 p{
+  color: #F48B29;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 1px;
+
 }
 
 .statment{

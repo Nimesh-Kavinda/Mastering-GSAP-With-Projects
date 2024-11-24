@@ -48,6 +48,13 @@ timeLine.from(".swiper", {
     
 })
 
+timeLine.from(".subtitle2", {
+    opacity:0,
+    duration:1,
+    ease:"power4.Out",
+    y:-50,
+})
+
 timeLine.from('.statment' , {
     opacity:0,
     duration:1,
