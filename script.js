@@ -11,6 +11,16 @@ timeLine.from(navbar.children, {
     }
 });
 
+timeLine.fromTo(".subtitle", {
+    opacity:1
+},{
+    opacity:0,
+    duration:1,
+    ease:"power4.inOut",
+    y:-50,
+})
+
+
 timeLine.fromTo(".title img", {
     opacity:0,
     scale:0,
