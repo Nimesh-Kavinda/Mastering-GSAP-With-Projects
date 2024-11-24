@@ -178,7 +178,9 @@ nav .offcanvas{
   }
 
   .swiper-slide:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
+    background-image: url(./img/loading-page-svg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .swiper-slide:nth-child(5n) {
