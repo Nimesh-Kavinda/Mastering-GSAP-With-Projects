@@ -80,7 +80,8 @@ nav .offcanvas{
 .heading .title img{
     width: 15%;
     border-radius: 50%;
-    border: 1px solid gold;
+    border-right: 4px solid #AC0D0D;
+    border-left: 3px solid #F48B29;
 }
 
 .heading .title p span{
@@ -112,6 +113,18 @@ nav .offcanvas{
     letter-spacing: 5px;
     text-shadow: #AC0D0D;
     
+}
+
+.statment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #eaeaea;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: inherit;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
