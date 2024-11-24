@@ -25,9 +25,22 @@ timeLine.fromTo(".title img", {
 }
 )
 
+timeLine.from(".title p", {
+    opacity:0,
+    x:100,
+    duration:1,
+})
+
 timeLine.from(".swiper", {
     duration:2,
     opacity:0,
     y:100,
     
+})
+
+timeLine.from('.statment' , {
+    opacity:0,
+    duration:1,
+    delay:0.5,
+    scale:0,
 })
