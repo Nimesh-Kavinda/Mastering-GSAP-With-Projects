@@ -5,29 +5,74 @@ text.innerHTML = text.innerHTML
                 .join("");
 
 
-                let num1 = document.querySelector('.num1');
-                let num2 = document.querySelector('.num2');
-                let num3 = document.querySelector('.num3');
-                
-                const CounterUpAnimation = (number , start,end ,duration)=>{
-                   let startTimestamp = null;
-                   const step = (tiemstamp)=>{
-                    if(!startTimestamp){
-                        startTimestamp = tiemstamp;
-                    }
-                
-                    let prograss = Math.min((tiemstamp - startTimestamp) / duration , 1);
-                    number.innerHTML = Math.floor(prograss * (end - start) + start) + 'k+';
-                
-                    if(prograss <1){
-                        window.requestAnimationFrame(step);
-                    }
-                   } 
-                   window.requestAnimationFrame(step);
-                }
+    let num1 = document.querySelector('.num1');
+    let num2 = document.querySelector('.num2');
+    let num3 = document.querySelector('.num3');
+                    
+    const CounterUpAnimation = (number , start,end ,duration)=>{
+    let startTimestamp = null;
+    const step = (tiemstamp)=>{
+    if(!startTimestamp){
+        startTimestamp = tiemstamp;
+    }
+                    
+    let prograss = Math.min((tiemstamp - startTimestamp) / duration , 1);
+    number.innerHTML = Math.floor(prograss * (end - start) + start) + 'k+';
+                    
+    if(prograss <1){
+        window.requestAnimationFrame(step);
+    }
+    } 
+    window.requestAnimationFrame(step);
+    }
 
-                setTimeout(()=>{
-                    CounterUpAnimation(num1 , 0 , 100 , 5000)
-                    CounterUpAnimation(num2 , 0 , 32 , 2000)
-                    CounterUpAnimation(num3 , 0 , 50 , 3000)
-                } , 1000)
+const navbar = document.querySelector('.nav-bar');
+
+gsap.from(navbar.children,  {
+    duration:1,
+    delay:0.5,
+    opacity:0,
+    y:50,
+    stagger:{
+        amount:0.4,
+    }
+});
+
+gsap.from('.side-one', {
+    x:-200,
+    skewX:65,
+    opacity:0,
+    duration:1,
+    delay:1,
+    stagger:{
+        amount:0.4,
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    setTimeout(()=>{
+    CounterUpAnimation(num1 , 0 , 100 , 5000)
+        CounterUpAnimation(num2 , 0 , 32 , 2000)
+        CounterUpAnimation(num3 , 0 , 50 , 3000)
+            } , 1000)
