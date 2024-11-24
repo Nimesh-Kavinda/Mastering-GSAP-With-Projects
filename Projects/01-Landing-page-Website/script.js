@@ -47,7 +47,37 @@ gsap.from('.side-one', {
     stagger:{
         amount:0.4,
     }
+});
+
+gsap.from('.skew', {
+    duration:1,
+    delay:2.5,
+    opacity:0,
+    y:50,
+    stagger:{
+        amount:0.4,
+    }
 })
+
+gsap.from(".statistics", {
+    delay:2,
+    autoAlpha:0,
+    stagger:
+        .10
+    
+})
+
+gsap.fromTo(".circle-text" , {
+    opacity:0,
+    scale:0,
+    rotation:400
+}, {
+    duration:1,
+    delay:2,
+    opacity:1,
+    scale:1,rotation:1
+}
+)
 
 
 
