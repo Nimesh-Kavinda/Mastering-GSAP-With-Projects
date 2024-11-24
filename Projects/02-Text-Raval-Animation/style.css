@@ -8,11 +8,11 @@
 }
 
 body{
-    background-color: #000;
+    background-color: #467e;
     color: aliceblue;
     background: radial-gradient(
         circle closest-corner at center 125px,
-        #222,
+        #467e,
         #000 60%
     )
     no-repeat;
