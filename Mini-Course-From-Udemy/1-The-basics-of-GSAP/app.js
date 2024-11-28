@@ -1,6 +1,3 @@
 const image1 = document.querySelector('.img1')
 
-document.querySelector('.btn')
-.addEventListener("click", () => {
-gsap.fromTo(image1, {autoAlpha: 0}, {autoAlpha: 1, duration : 2}) 
-})   
+gsap.from(image1, {autoAlpha: 0, y: -100, rotation: 90, ease: "bounce", duration : 2}) 
