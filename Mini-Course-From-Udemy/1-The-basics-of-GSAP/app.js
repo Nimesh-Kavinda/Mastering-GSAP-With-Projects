@@ -1,13 +1,12 @@
 const image1 = document.querySelector('.img1');
 
-gsap.from(image1, {
+gsap.from('img', {
   autoAlpha: 0,
   y: -100,
-  rotation: 90,
-  ease: 'bounce',
+  ease: 'power4',
   duration: 2,
-  delay: 1,
-  repeat: -1,
-  repeatDelay: 0.2,
-  yoyo: true,
+  stagger: {
+    each: 0.5,
+    from: 'end',
+  },
 });
