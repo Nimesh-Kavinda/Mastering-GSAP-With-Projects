@@ -1,9 +1,11 @@
 const image1 = document.querySelector('.img1');
 
 gsap.to(image1, {
-  keyframes: [
-    { duration: 0.3, x: 100 },
-    { duration: 0.3, y: 100 },
-    { duration: 0.3, x: 200 },
-  ],
+  x: 100,
+  duration: 1,
+  repeat: 1,
+  onComplete: () => console.log('complete'),
+  onStart: () => console.log('Start'),
+  onUpdaate: () => console.log('Update'),
+  onRepeat: () => console.log('Repaet'),
 });
