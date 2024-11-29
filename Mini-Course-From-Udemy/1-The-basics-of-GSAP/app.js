@@ -1,11 +1,17 @@
 const image1 = document.querySelector('.img1');
 
-gsap.to(image1, {
-  x: 100,
-  duration: 1,
-  repeat: 1,
-  onComplete: () => console.log('complete'),
-  onStart: () => console.log('Start'),
-  onUpdaate: () => console.log('Update'),
-  onRepeat: () => console.log('Repaet'),
+gsap.registerEffect({
+  name: 'imgAnimation',
+  effect: (targets, config) => {
+    return gsap.to(targets, {
+      duration: config.duration,
+      y: 200,
+      scale: 1.4,
+      rotation: 360,
+    });
+  },
+  defaults: { duration: 2 },
 });
+
+gsap.effects.imgAnimation(image1, { duration: 5 });
+gsap.effects.imgAnimation('.img2');
