@@ -1,5 +1,5 @@
 # GSAP Playground 🌟  
-A repository dedicated to exploring and mastering the [GreenSock Animation Platform (GSAP)](https://greensock.com/gsap/), the ultimate JavaScript library for creating high-performance, visually engaging animations.
+A repository dedicated to exploring and mastering the [GreenSock Animation Platform (GSAP)](https://greensock.com/gsap/), the ultimate JavaScript library for creating high-performance, visually engaging animations.I am going to follow a UDEMY course and some projects in Youtube platform
 
 ## About  
 This project is a collection of my GSAP experiments, tutorials, and projects as I learn and practice animation techniques. The goal is to become proficient in GSAP while building dynamic, visually appealing web experiences.
