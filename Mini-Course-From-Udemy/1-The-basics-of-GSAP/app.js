@@ -5,7 +5,7 @@ const tl = gsap.timeline({
   },
   // repeat : -1,
   // yoyo : true,
-  // paused : true
+  paused : true,
   onComplete : () => console.log("Completed"),
   onStart: () => console.log("Start")
 });
@@ -15,8 +15,10 @@ tl
 .from('.img2', {autoAlpha: 0,  y: -50}) 
 .from('.img3', {autoAlpha: 0,  y: -50})
 .from('h1', {autoAlpha: 0,  y: -50})
+.add('endAim', '-=2')
 .from('p', {autoAlpha: 0,  y: -50})
 
-// setTimeout(() => {
-//    tl.play()
-// }, 1500)
+setTimeout(() => {
+   tl.seek('endAim'),
+   tl.play()
+}, 2000)
