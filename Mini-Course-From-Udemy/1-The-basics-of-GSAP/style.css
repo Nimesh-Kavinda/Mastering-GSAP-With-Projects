@@ -22,7 +22,9 @@ img {
   width: 20%;
   height: auto;
   flex-shrink: 1;
-  margin: 20px;
+   margin: 20px;
+  visibility: hidden;
+
 }
 
 /* .img1 {
@@ -34,6 +36,8 @@ p {
   text-align: center;
   color: #f1f1f1;
   line-height: 1.2;
+  visibility: hidden;
+
 }
 h1 {
   margin-top: 50px;
