@@ -21,4 +21,4 @@ tl
 setTimeout(() => {
    tl.seek('endAim'),
    tl.play()
-}, 2000)
+}, 2000)                
